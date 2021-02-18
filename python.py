@@ -1,4 +1,4 @@
-import math  # log, cos
+from math import log, cos
 
 x = float(input("x = "))
 c = log(float(input("c = ")))
