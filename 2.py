@@ -1,6 +1,6 @@
 from math import exp, cos, tan
 
-x, y, z=0,0,0
+x, y, z = 0,0,0
 i = 0.30
 n = 0.60
 p = 0.05
