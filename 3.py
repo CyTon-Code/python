@@ -1,13 +1,10 @@
 from math import exp, cos, tan
 
-# x = 0
-# y = 0
-# z = 0
 a = 3.7
+p = 0.05
 
 i = float(input("i = "))
 n = float(input("n = "))
-p = 0.05
 
 while (i < n):
     x = a * exp(3)*i
