@@ -1,21 +1,27 @@
-from math import exp, cos, tan
+# Суму S квадратів усіх елементів, що перевищують 10 по абсолютному
+# значенню і їхню кількість К.
 
-a = 3.7
-p = 0.05
+# Кожен елемент від -10 до 10 піносиш до квадрату і знаходиш їхню суму
+# і кількість цифр від -10 до 10
+n = 10
+sum = 0
 
-i = float(input("i = "))
-n = float(input("n = "))
+for i in range(n * 2):
+    sum += i ** 2
 
-while (i < n):
-    x = a * exp(3)*i
-    y = 2 * x * cos(i)
+print(sum)
 
-    if (x <= 1):
-        z = (1 + 2 * y*y) * cos(i)
+# або:
+sum = 0
 
-    else:
-        z = pow(7.2 * x, 2) * tan(i)
+array = [
+[1,2,3],
+[3,1,2],
+[2,3,1]
+]
+for j in array:
+    for i in j:
+        if i > 10:
+            sum += i
 
-    i += p
-
-    print(z)
+print(sum)
