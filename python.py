@@ -8,4 +8,3 @@ b = x**2 + c
 y = (((a*x)** 3)+b)/cos(x)** 3
 
 print(y)
-
