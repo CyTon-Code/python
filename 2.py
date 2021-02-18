@@ -1,10 +1,30 @@
-from math import log, cos
+from math import exp, cos, tan
 
-x = float(input("x = "))
-c = log(float(input("c = ")))
-a = float(input("a = ")) * c + x**2
-b = x**2 + c
+x = 0
+y = 0
+z = 0
+a = 3.7
+# i = 0.30
+# n = 0.60
+i = float(input("i = "))
+n = float(input("n = "))
+p = 0.05
 
-y = (((a*x)** 3)+b)/cos(x)** 3
+while (i < n):
+    x = a * exp(3)*i
+    y = 2 * x * cos(i)
 
-print(y)
+
+    if (x <= 1):
+        z = (1 + 2 * y*y) * cos(i)
+
+
+
+    else:
+        z = pow(7.2 * x, 2) * tan(i)
+
+
+    i += p
+
+
+print(z)
