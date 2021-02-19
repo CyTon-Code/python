@@ -4,11 +4,11 @@
 
 using std::string;
 using std::cout;
-using std::cin;
 
 
-string input(string name="What is your name? -")
+string input(string name)
 {
+    using std::cin;
     cout << name;
     getline (cin, name);
     return name;
@@ -17,7 +17,7 @@ string input(string name="What is your name? -")
 
 void hi(void)
 {
-  string name = input();
+  string name = input("What is your name? \n-");
   cout << "Hello, " << name << "!\n";
 }
 
