@@ -2,11 +2,11 @@ from math import log, cos
 
 x = float(input("x = "))
 c = float(input("c = "))
-a = float(input("a = "))  # блок вводу/виводу
+a = float(input("a = "))  # блок ввода/вывода
 
-с = log(c)
-a = a * c + x**2
-b = x**2 + c
-y = (((a*x)** 3)+b)/cos(x)** 3  # блок вичеслень.
+c = log(c)
+a = a * c + x ** 2
+b = x ** 2 + c
+y = (((a * x) ** 3) + b) / cos(x) ** 3  # блок исчислений.
 
-print(y)  # блок вводу/виводу
+print(y)  # блок ввода/вывода
